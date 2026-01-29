@@ -1,67 +1,90 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenny Chung | Product Designer</title>
     <style>
-        body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
-        header { border-bottom: 2px solid #eee; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin-bottom: 5px; }
-        .tagline { color: #666; font-style: italic; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #fff; }
+        header { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px; }
+        h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
+        .tagline { color: #555; font-size: 1.2em; font-weight: 500; margin-top: 5px; }
+        .contact-info { margin-top: 15px; color: #666; font-size: 0.95em; }
         section { margin-bottom: 40px; }
-        h2 { color: #2c3e50; border-left: 5px solid #2c3e50; padding-left: 10px; }
-        .job { margin-bottom: 20px; }
-        .job-title { font-weight: bold; font-size: 1.1em; }
-        .company { color: #7f8c8d; }
-        .skills { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; }
-        .skills li { background: #f4f4f4; padding: 5px 15px; border-radius: 20px; font-size: 0.9em; }
-        .btn { display: inline-block; background: #2c3e50; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .btn:hover { background: #34495e; }
+        h2 { color: #000; font-size: 1.5em; border-left: 6px solid #333; padding-left: 15px; margin-bottom: 20px; text-transform: uppercase; }
+        .job { margin-bottom: 25px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+        .job-title { font-weight: bold; font-size: 1.15em; color: #2c3e50; }
+        .company { font-style: italic; color: #7f8c8d; }
+        .duration { font-weight: bold; color: #34495e; }
+        ul { padding-left: 20px; margin-top: 8px; }
+        li { margin-bottom: 5px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+        .skills li { background: #333; color: #fff; padding: 6px 14px; border-radius: 4px; font-size: 0.85em; }
+        .btn { display: inline-block; background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
+        .btn:hover { background: #444; }
     </style>
 </head>
 <body>
 
 <header>
     <h1>JENNY CHUNG</h1>
-    <p class="tagline">Product Designer with 20+ Years of Experience | Specializing in 3D & Production</p>
-    <p>Corona, CA | jchung0510@gmail.com | 909-525-3560</p>
-    <a href="Jenny_Chung_Resume.pdf" class="btn">Download Full Resume (PDF)</a>
+    <p class="tagline">Product Designer with 20+ Years of Experience | 3D Visualization Expert</p>
+    <p class="contact-info">
+        Corona, CA | jchung0510@gmail.com | 909-525-3560
+    </p>
+    <a href="Jenny_Chung_Resume.pdf" class="btn">Download Resume (PDF)</a>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>2001년부터 시작된 20년 이상의 풍부한 실무 경험을 가진 제품 디자이너입니다. 3D 조경 모델링부터 항공 전세기 지상 운영, 그리고 고도의 전문성이 필요한 자동차 휠 디자인까지 폭넓은 커리어를 쌓아왔습니다. 특히 Alias와 KeyShot을 활용한 정교한 3D 시각화와 미국 디자인 특허 도면 제작에 강점이 있으며, 최신 AI 도구를 실무에 적극 도입하여 작업 효율을 극대화하는 지속 성장형 전문가입니다.</p>
+<section id="summary">
+    <h2>Professional Summary</h2>
+    <p>Accomplished Product Designer with over 20 years of diverse experience in 3D modeling, production-focused design, and ground operations. Proven expertise in Alias and KeyShot for high-fidelity visualization, specializing in automotive wheel design and design patent documentation. Highly adept at integrating AI-assisted workflows to optimize design efficiency and deliver market-ready solutions.</p>
 </section>
 
 <section id="experience">
-    <h2>Experience Highlights</h2>
+    <h2>Professional Experience</h2>
+    
     <div class="job">
-        <span class="job-title">Product Designer (Production Focus)</span> <br>
-        <span class="company">Design Infini | USA | 2012 – 2025</span>
-        <p>양산 중심의 자동차 휠 3D 디자인 및 고품질 렌더링, 미국 디자인 특허 도면 제작 총괄.</p>
+        <div class="job-header">
+            <span class="job-title">Product Designer (Production & 3D Visualization)</span>
+            <span class="duration">2012 – 2025</span>
+        </div>
+        <div class="company">Design Infini | California, USA</div>
+        <ul>
+            <li>Led 3D design and high-quality rendering for production-focused automotive wheels.</li>
+            <li>Managed the creation and filing of U.S. design patent drawings, ensuring technical accuracy and compliance.</li>
+            <li>Collaborated with engineering teams to bridge the gap between creative concepts and manufacturing reality.</li>
+        </ul>
     </div>
+
     <div class="job">
-        <span class="job-title">Ground Operations (Charter Flights)</span> <br>
-        <span class="company">KRYKYZ Airline | Korea | 2004 – 2007</span>
-        <p>전세기 지상 운영 및 화물/승객 조율 업무 수행.</p>
+        <div class="job-header">
+            <span class="job-title">Ground Operations Manager (Charter Flights)</span>
+            <span class="duration">2004 – 2007</span>
+        </div>
+        <div class="company">KRYKYZ Airline | Seoul, Korea</div>
+        <ul>
+            <li>Managed ground operations for international charter flights, coordinating passenger and cargo logistics.</li>
+            <li>Ensured seamless communication between flight crews and airport authorities to maintain strict schedules.</li>
+        </ul>
     </div>
 </section>
 
 <section id="skills">
-    <h2>Core Skills</h2>
+    <h2>Core Expertise</h2>
     <ul class="skills">
-        <li>Alias</li>
-        <li>KeyShot</li>
-        <li>3D Modeling & Rendering</li>
+        <li>Autodesk Alias</li>
+        <li>KeyShot Rendering</li>
+        <li>3D Modeling & Visualization</li>
         <li>Design Patent Drawings</li>
-        <li>AI-Assisted Workflow</li>
-        <li>Production-Focused Visualization</li>
+        <li>AI-Assisted Design Workflow</li>
+        <li>Automotive Wheel Design</li>
+        <li>Production Design</li>
     </ul>
 </section>
 
 <footer>
-    <p>&copy; 2026 Jenny Chung. All rights reserved.</p>
+    <p style="text-align: center; color: #999; font-size: 0.8em; margin-top: 50px;">&copy; 2026 Jenny Chung. All rights reserved.</p>
 </footer>
 
 </body>
