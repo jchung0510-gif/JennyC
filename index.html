@@ -5,87 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jenny Chung | Product Designer</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 40px 20px; background-color: #fff; }
-        header { border-bottom: 2px solid #333; padding-bottom: 20px; margin-bottom: 30px; }
-        h1 { margin: 0; font-size: 2.5em; letter-spacing: 1px; }
-        .tagline { color: #555; font-size: 1.2em; font-weight: 500; margin-top: 5px; }
-        .contact-info { margin-top: 15px; color: #666; font-size: 0.95em; }
-        section { margin-bottom: 40px; }
-        h2 { color: #000; font-size: 1.5em; border-left: 6px solid #333; padding-left: 15px; margin-bottom: 20px; text-transform: uppercase; }
-        .job { margin-bottom: 25px; }
-        .job-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
-        .job-title { font-weight: bold; font-size: 1.15em; color: #2c3e50; }
-        .company { font-style: italic; color: #7f8c8d; }
-        .duration { font-weight: bold; color: #34495e; }
-        ul { padding-left: 20px; margin-top: 8px; }
-        li { margin-bottom: 5px; }
-        .skills { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
-        .skills li { background: #333; color: #fff; padding: 6px 14px; border-radius: 4px; font-size: 0.85em; }
-        .btn { display: inline-block; background: #000; color: #fff; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-weight: bold; margin-top: 15px; transition: 0.3s; }
-        .btn:hover { background: #444; }
+        :root { --primary: #2c3e50; --accent: #34495e; --bg: #ffffff; --text: #333; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--text); max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: var(--bg); }
+        header { border-bottom: 3px solid var(--primary); padding-bottom: 30px; margin-bottom: 40px; }
+        h1 { margin: 0; font-size: 2.8em; letter-spacing: -1px; color: var(--primary); }
+        .contact-info { margin-top: 10px; color: #666; font-size: 1em; }
+        section { margin-bottom: 50px; }
+        h2 { font-size: 1.4em; color: var(--primary); border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 25px; text-transform: uppercase; letter-spacing: 1px; }
+        .job { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .job-title { font-weight: 700; font-size: 1.2em; color: #000; }
+        .company-info { color: #666; font-style: italic; margin-bottom: 10px; }
+        ul { padding-left: 18px; margin-top: 8px; }
+        li { margin-bottom: 6px; }
+        
+        /* Portfolio Grid */
+        .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 20px; }
+        .portfolio-item { border: 1px solid #eee; border-radius: 8px; overflow: hidden; transition: transform 0.3s ease; }
+        .portfolio-item:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+        .portfolio-item img { width: 100%; height: 200px; object-fit: cover; background-color: #f9f9f9; }
+        .portfolio-desc { padding: 15px; font-size: 0.9em; border-top: 1px solid #eee; }
+
+        .skills-container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .skill-list { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+        .skill-list li { background: #f0f2f5; color: var(--primary); padding: 5px 12px; border-radius: 4px; font-size: 0.85em; font-weight: 500; }
+        .btn { display: inline-block; background: var(--primary); color: #fff; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: 600; margin-top: 20px; }
+        @media (max-width: 600px) { .job-header { flex-direction: column; } .skills-container { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
 
 <header>
     <h1>JENNY CHUNG</h1>
-    <p class="tagline">Product Designer with 20+ Years of Experience | 3D Visualization Expert</p>
-    <p class="contact-info">
-        Corona, CA | jchung0510@gmail.com | 909-525-3560
-    </p>
-    <a href="Jenny_Chung_Resume.pdf" class="btn">Download Resume (PDF)</a>
+    <p class="contact-info">Corona, CA | jchung0510@gmail.com | 909-525-3560</p>
+    <a href="Jenny_Chung_Resume.pdf" class="btn">Download Full Resume (PDF)</a>
 </header>
 
-<section id="summary">
+<section>
     <h2>Professional Summary</h2>
-    <p>Accomplished Product Designer with over 20 years of diverse experience in 3D modeling, production-focused design, and ground operations. Proven expertise in Alias and KeyShot for high-fidelity visualization, specializing in automotive wheel design and design patent documentation. Highly adept at integrating AI-assisted workflows to optimize design efficiency and deliver market-ready solutions.</p>
+    <p>Product Designer with over 20 years of professional experience since 2001, spanning 3D environmental modeling, aviation charter flight ground operations, and specialized automotive wheel design. Highly experienced in production-focused 3D design, photorealistic renderings, and U.S. design patent drawings. Actively utilizes AI-assisted tools to enhance design research, visualization workflows, and efficiency, with a strong commitment to continuous learning and professional growth.</p>
 </section>
 
-<section id="experience">
+<section id="portfolio">
+    <h2>Design Portfolio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="wheel1.jpg" alt="Automotive Wheel Design">
+            <div class="portfolio-desc">
+                <strong>Automotive Wheel Design</strong><br>
+                Production-focused 3D modeling & rendering using Alias/KeyShot.
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="drawing1.jpg" alt="Patent Drawing">
+            <div class="portfolio-desc">
+                <strong>U.S. Design Patent Drawing</strong><br>
+                Precise technical drawings compliant with USPTO standards.
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <img src="concept1.jpg" alt="AI Assisted Design">
+            <div class="portfolio-desc">
+                <strong>AI-Assisted Workflow</strong><br>
+                Research and concept development using AI tools.
+            </div>
+        </div>
+    </div>
+    <p style="margin-top: 15px; font-size: 0.9em; color: #888;">* Images will appear once uploaded to GitHub with matching filenames.</p>
+</section>
+
+<section>
     <h2>Professional Experience</h2>
     
     <div class="job">
         <div class="job-header">
-            <span class="job-title">Product Designer (Production & 3D Visualization)</span>
-            <span class="duration">2012 – 2025</span>
+            <span class="job-title">Product Designer (Production Focus)</span>
+            <span>Jan 2012 – Dec 2025</span>
         </div>
-        <div class="company">Design Infini | California, USA</div>
+        <div class="company-info">Design Infini | USA</div>
         <ul>
-            <li>Led 3D design and high-quality rendering for production-focused automotive wheels.</li>
-            <li>Managed the creation and filing of U.S. design patent drawings, ensuring technical accuracy and compliance.</li>
-            <li>Collaborated with engineering teams to bridge the gap between creative concepts and manufacturing reality.</li>
+            <li>Designed automotive wheels using production-focused 3D workflows for aftermarket and design-driven clients.</li>
+            <li>Created high-quality, photorealistic renderings using Alias and KeyShot for product presentation and marketing.</li>
+            <li>Produced precise U.S. design patent drawings compliant with U.S. patent submission standards.</li>
+            <li>Utilized AI-assisted tools to support design research, concept development, and workflow optimization.</li>
         </ul>
     </div>
-
-    <div class="job">
-        <div class="job-header">
-            <span class="job-title">Ground Operations Manager (Charter Flights)</span>
-            <span class="duration">2004 – 2007</span>
-        </div>
-        <div class="company">KRYKYZ Airline | Seoul, Korea</div>
-        <ul>
-            <li>Managed ground operations for international charter flights, coordinating passenger and cargo logistics.</li>
-            <li>Ensured seamless communication between flight crews and airport authorities to maintain strict schedules.</li>
-        </ul>
-    </div>
-</section>
-
-<section id="skills">
-    <h2>Core Expertise</h2>
-    <ul class="skills">
-        <li>Autodesk Alias</li>
-        <li>KeyShot Rendering</li>
-        <li>3D Modeling & Visualization</li>
-        <li>Design Patent Drawings</li>
-        <li>AI-Assisted Design Workflow</li>
-        <li>Automotive Wheel Design</li>
-        <li>Production Design</li>
-    </ul>
-</section>
-
-<footer>
-    <p style="text-align: center; color: #999; font-size: 0.8em; margin-top: 50px;">&copy; 2026 Jenny Chung. All rights reserved.</p>
-</footer>
-
-</body>
-</html>
